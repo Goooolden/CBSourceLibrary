@@ -94,8 +94,12 @@ Pod::Spec.new do |s|
   s.source_files  = "CombancSourceLibrary/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
-
+  s.public_header_files = '#import "Masonry.h"',
+'#import "UIImageView+WebCache.h"',
+'#import "HTTPTool.h"',
+'#import "CombancHUD.h"',
+'#import "UtilsMacro.h"',
+'#import "InterfaceMacro.h"'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -130,16 +134,16 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  s.dependency 'Masonry'
-  s.dependency 'SDWebImage'
-  s.dependency 'MJExtension'
-  s.dependency 'CombancExtension'
-  s.dependency 'WMPageController', '~> 2.5.2'
-  s.dependency 'CombancHttpTool', '~> 0.0.1.3'
-  s.dependency 'CombancHUD', '~> 0.0.2'
+  s.dependency "Masonry"
+  s.dependency "SDWebImage"
+  s.dependency "MJExtension"
+  s.dependency "CombancExtension"
+  s.dependency "WMPageController", "~> 2.5.2"
+  s.dependency "CombancHttpTool", "~> 0.0.1.3"
+  s.dependency "CombancHUD", "~> 0.0.2"
 
 end
