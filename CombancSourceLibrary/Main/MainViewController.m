@@ -10,7 +10,7 @@
 #import "SourceLibBaseNavigationController.h"
 #import "PublicLibFileForderListViewController.h"
 #import "NetPanFileForderListViewController.h"
-#import "MineListViewController.h"
+#import "SLMineListViewController.h"
 #import <UIImage+Extend.h>
 
 @interface MainViewController ()
@@ -25,9 +25,9 @@
 }
 
 - (void)jumpToMainVC {
-    NSArray *normalImage = @[@"tabbar_LibPub_normal", @"tabbar_SkyDrive_normal", @"tabbar_My_normal"];
-    NSArray *selectImage = @[@"tabbar_LibPub_focus", @"tabbar_SkyDrive_focus", @"tabbar_My_focus"];
-    NSArray *vcClass = @[@"PublicLibFileForderListViewController", @"NetPanFileForderListViewController", @"MineListViewController"];
+    NSArray *normalImage = @[@"SourceLibrary.bundle/tabbar_LibPub_normal", @"SourceLibrary.bundle/tabbar_SkyDrive_normal", @"SourceLibrary.bundle/tabbar_My_normal"];
+    NSArray *selectImage = @[@"SourceLibrary.bundle/tabbar_LibPub_focus", @"SourceLibrary.bundle/tabbar_SkyDrive_focus", @"SourceLibrary.bundle/tabbar_My_focus"];
+    NSArray *vcClass = @[@"PublicLibFileForderListViewController", @"NetPanFileForderListViewController", @"SLMineListViewController"];
     NSArray *titleArray = @[@"公共库", @"网盘", @"我的"];
     NSMutableArray *allArray = [NSMutableArray array];
     for (int i = 0; i < titleArray.count; i++) {

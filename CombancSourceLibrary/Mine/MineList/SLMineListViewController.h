@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SourceLibBaseViewController.h"
-@interface MineListViewController : SourceLibBaseViewController
+@interface SLMineListViewController : SourceLibBaseViewController
 
 @property (nonatomic, strong) NSArray *dataArray; /**< 根据各个Section情况传Icon和Title数组*/
 
