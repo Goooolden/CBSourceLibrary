@@ -15,6 +15,6 @@
 #import "CombancHUD.h"
 
 #import "UtilsMacro.h"
-#import "InterfaceMacro.h"
+#import "SLInterfaceMacro.h"
 
 #endif /* PrefixHeader_pch */
