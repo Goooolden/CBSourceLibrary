@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CBSourceLibrary"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "A short description of CBSourceLibrary."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Goooolden/CBSourceLibrary.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/Goooolden/CBSourceLibrary.git", :tag => "0.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,13 +94,8 @@ Pod::Spec.new do |s|
   s.source_files  = "CombancSourceLibrary/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = '#import "Masonry.h"',
-'#import "UIImageView+WebCache.h"',
-'#import "HTTPTool.h"',
-'#import "CombancHUD.h"',
-'#import "UtilsMacro.h"',
-'#import "InterfaceMacro.h"'
-
+  # s.prefix_header_file = '#import <Masonry.h>','#import <UIImageView+WebCache.h>','#import <HTTPTool.h>','#import <CombancHUD.h>','#import <UtilsMacro.h>','#import <InterfaceMacro.h>'
+  s.prefix_header_file = "CombancSourceLibrary/Macro/PrefixHeader.pch"
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
@@ -109,7 +104,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "CBSourceLibrary/SourceLibrary.bundle"
+  s.resource  = "SourceLibrary.bundle"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -142,7 +137,7 @@ Pod::Spec.new do |s|
   s.dependency "SDWebImage"
   s.dependency "MJExtension"
   s.dependency "CombancExtension"
-  s.dependency "WMPageController", "~> 2.5.2"
+  s.dependency "WMPageController", "~> 2.3.0"
   s.dependency "CombancHttpTool", "~> 0.0.1.3"
   s.dependency "CombancHUD", "~> 0.0.2"
 

@@ -32,6 +32,7 @@
         // self.titleColorNormal = [UIColor colorWithHex:@"#38383d"];
         self.titleFontName = @"PingFangSC-Medium";
         self.menuItemWidth = 80.0f;
+        self.menuHeight = 50.0f;
         self.progressWidth = 80.0f;
     }
     return self;
