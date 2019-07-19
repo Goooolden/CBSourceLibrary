@@ -6,7 +6,7 @@
 //  Copyright © 2018年 王楠. All rights reserved.
 //  我的
 
-#import "SLMineListViewController.h"
+#import "MineListViewController.h"
 #import "MyDownloadListViewController.h"
 #import "SourceLibBaseNavigationController.h"
 
@@ -18,22 +18,22 @@
 
 NSString *const MyTableViewCellId = @"MyTableViewCellId";
 
-@interface SLMineListViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface MineListViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *myTableView; /**< tableView*/
 
 @end
 
-@implementation SLMineListViewController
+@implementation MineListViewController
 
 #pragma mark - LifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"我的";
     
-    NSArray *section0 = @[@{@"image":@"SourceLibrary.bundle/my_collection", @"title":@"收藏"}, @{@"image":@"SourceLibrary.bundle/my_receipt", @"title":@"收件"}, @{@"image":@"SourceLibrary.bundle/my_shared", @"title":@"共享"}];
-    NSArray *section1 = @[@{@"image":@"SourceLibrary.bundle/my_LibPub_recyclebin", @"title":@"公共库回收站"}, @{@"image":@"SourceLibrary.bundle/my_SkyDrive_recyclebin", @"title":@"网盘回收站"}];
-    NSArray *section2 = @[@{@"image":@"SourceLibrary.bundle/my_download", @"title":@"我的下载"}];
+    NSArray *section0 = @[@{@"image":@"my_collection", @"title":@"收藏"}, @{@"image":@"my_receipt", @"title":@"收件"}, @{@"image":@"my_shared", @"title":@"共享"}];
+    NSArray *section1 = @[@{@"image":@"my_LibPub_recyclebin", @"title":@"公共库回收站"}, @{@"image":@"my_SkyDrive_recyclebin", @"title":@"网盘回收站"}];
+    NSArray *section2 = @[@{@"image":@"my_download", @"title":@"我的下载"}];
 
     self.dataArray = @[section0, section1, section2];
     [self.view addSubview:self.myTableView];

@@ -37,7 +37,7 @@ static NSString *const NetPanFileListCellId       = @"NetPanFileListCellId";
     
     // 文件操作View
     DealFileForderView *dealForderView = [[DealFileForderView alloc] init];
-    dealForderView.iconArray = @[@"SourceLibrary.bundle/new_normal", @"SourceLibrary.bundle/upload_normal", @"SourceLibrary.bundle/search_normal", @"SourceLibrary.bundle/more_normal"];
+    dealForderView.iconArray = @[@"new_normal", @"upload_normal", @"search_normal", @"more_normal"];
     CGFloat height = CGRectGetHeight([[UIApplication sharedApplication] statusBarFrame]) + CGRectGetHeight(self.navigationController.navigationBar.frame);
     height = 0;
     dealForderView.frame = CGRectMake(0, height, self.view.bounds.size.width, 50);

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainViewController : UIViewController
+@interface SourceLibraryViewController : UIViewController
 
 @end
 
