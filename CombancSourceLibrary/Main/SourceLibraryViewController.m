@@ -10,7 +10,7 @@
 #import "SourceLibBaseNavigationController.h"
 #import "PublicLibFileForderListViewController.h"
 #import "NetPanFileForderListViewController.h"
-#import "MineListViewController.h"
+#import "SLMineListViewController.h"
 #import "SourceLibraryCollectionViewCell.h"
 #import <UIImage+Extend.h>
 
@@ -90,7 +90,7 @@ static NSString *cellID = @"HomeCellID";
         NetPanFileForderListViewController *panVC = [[NetPanFileForderListViewController alloc]init];
         [self.navigationController pushViewController:panVC animated:YES];
     }else if(indexPath.row == 2) {
-        MineListViewController *mineVC = [[MineListViewController alloc]init];
+        SLMineListViewController *mineVC = [[SLMineListViewController alloc]init];
         [self.navigationController pushViewController:mineVC animated:YES];
     }
 }
